@@ -1,16 +1,30 @@
+*{
+    color: white;
+}
+option{
+    color: black;
+}
 .main{
     margin-top: 50px;
     background-color: transparent;
 }
 body{
-background: #5A3F37;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(https://www.elsevier.com/__data/assets/image/0006/974328/coronavirus-image-iStock-628925532-1200px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 li:nth-child(n){
-    background-color: rgba(235, 253, 224, 0.904);  
+    background-color: rgba(0, 0, 0, 0.7);  
 }
 .card{
-    background-color: rgba(235, 253, 224, 0.904); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 0;
+}
+#Nav{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#s1,option,.form-control,.form-control:active{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
     border: 0;
 }
