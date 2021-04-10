@@ -1,0 +1,28 @@
+<%- include("./partials/header") %> 
+<link rel="stylesheet" type="text/css" href="/public/stylesheets/form.css">
+
+
+<div class="container show main">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%= body.State %></h5>
+                    <span class="lead"><%= body.District %></span>
+                    <span class="float-right"><%= (new Date(Date.now())).toDateString() %> </span><br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Active Cases: <%= data[body.State]["districtData"][body.District]["active"] %> </li>
+                        <li class="list-group-item">Confirmed Cases: <%= data[body.State]["districtData"][body.District]["confirmed"] %> </li>
+                        <li class="list-group-item">Deceased: <%= data[body.State]["districtData"][body.District]["deceased"] %> </li>
+                        <li class="list-group-item">Recovered: <%= data[body.State]["districtData"][body.District]["recovered"] %> </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include("./partials/footer") %> 
